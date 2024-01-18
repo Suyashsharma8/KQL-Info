@@ -1,3 +1,3 @@
 # KQL-Queries
-This repo is to share KQL queries that i have learnt through research
+This repo is to share KQL queries for MS Defender 365 that i have learnt through research
 
