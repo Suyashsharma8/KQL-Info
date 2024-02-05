@@ -7,3 +7,4 @@ DeviceNetworkEvents
 and InitiatingProcessVersionInfoProductName == "AnyDesk"
 | where ActionType == "ConnectionSuccess"
 |project Timestamp,ActionType,DeviceName, RemoteIP,RemoteUrl, InitiatingProcessVersionInfoCompanyName, InitiatingProcessVersionInfoFileDescription, InitiatingProcessVersionInfoProductVersion
+```
