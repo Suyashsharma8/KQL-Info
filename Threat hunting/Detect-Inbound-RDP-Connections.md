@@ -1,3 +1,5 @@
+This query detects inbound RDP connections on internal company devices
+```kusto
 DeviceNetworkEvents
 | where ActionType == "ListeningConnectionCreated" and LocalPort == 3389
 | extend LocalIPIsPrivate = ipv4_is_private(LocalIP)
