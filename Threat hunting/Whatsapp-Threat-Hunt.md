@@ -5,4 +5,9 @@ DeviceFileEvents
 | where ActionType == "FileCreated"
 | where InitiatingProcessFileName contains "WhatsApp.exe"
 | where FileName endswith ".pyz" or FileName endswith ".pyzw" or FileName endswith ".php" or FileName endswith ".py"
-
+```
+The query can be modified to include wider extensions using regex and monitor file execution events:
+```kql
+DeviceProcessEvents
+| where InitiatingProcessFileName contains "WhatsApp.exe"
+| where FileName matches regex "\\.(pyz|pyzw|php|py|exe|dll|vbs|js|cmd|bat)$"
