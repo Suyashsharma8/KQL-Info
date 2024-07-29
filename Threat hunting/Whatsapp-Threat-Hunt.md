@@ -1,4 +1,4 @@
-This Query can be used to detect the security issue in the whatsapp version for windows that allows sending Python and PHP attachments which inturn executes without any warning when the recipient opens them.
+This Query can be used to detect the security issue in the whatsapp version for windows ( at the time of writing) that allows sending Python and PHP attachments which inturn executes without any warning when the recipient opens them.
 Blog reference: https://www.bleepingcomputer.com/news/security/whatsapp-for-windows-lets-python-php-scripts-execute-with-no-warning/
 ```kql
 DeviceFileEvents
