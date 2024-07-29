@@ -5,4 +5,4 @@ DeviceFileEvents
 | where ActionType == "FileCreated"
 | where InitiatingProcessFileName contains "WhatsApp.exe"
 | where FileName endswith ".pyz" or FileName endswith ".pyzw" or FileName endswith ".php" or FileName endswith ".py"
-```
+
