@@ -1,4 +1,4 @@
-This query is to review the advisory from Proofpoint about cybercriminal threat activity leveraging Cloudflare Tunnels to deliver malware. SOC added the IoC's in Misp and reviewed the logs for the last 30 days and found no hits.
+This query reviews the advisory from Proofpoint about cybercriminal threat activity leveraging Cloudflare Tunnels to deliver malware. SOC added the IoC's in Misp and reviewed the logs for the last 30 days and found no hits.
 Reference: https://www.proofpoint.com/us/blog/threat-insight/threat-actor-abuses-cloudflare-tunnels-deliver-rats
 The following KQL can be used for detection.
 ```kql
