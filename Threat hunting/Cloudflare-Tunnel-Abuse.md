@@ -1,6 +1,6 @@
 This query reviews the advisory from Proofpoint about cybercriminal threat activity leveraging Cloudflare Tunnels to deliver malware.
 Reference: https://www.proofpoint.com/us/blog/threat-insight/threat-actor-abuses-cloudflare-tunnels-deliver-rats
-The following KQL can be used for detection.
+.The following KQL can be used for detection.
 ```kql
 UrlClickEvents
 | where Timestamp > ago(30d)
