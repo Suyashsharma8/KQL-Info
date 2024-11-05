@@ -23,9 +23,9 @@ DeviceTvmSecureConfigurationAssessment
 | project DeviceId, DeviceName,SensorEnabled, EnableNetworkProtection
 | join kind=leftouter DeviceInfo on DeviceId
 | summarize p1=dcount(DeviceId) by MachineGroup,DeviceType,DeviceName,SensorEnabled,EnableNetworkProtection
-| where MachineGroup contains "North"
+| where MachineGroup contains "*******" //Apply filters here to narrow search results
 | where EnableNetworkProtection =="BAD"
-| where DeviceType !="Server"
+| where DeviceType !="*******" //Apply filters here to narrow search results
 | where SensorEnabled =="GOOD"
 ```
 To get the details of the scid configured in your environment you can use the below query:
