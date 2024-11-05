@@ -1,5 +1,5 @@
 This query will provide a report of many of the configurations for Defender ATP deployment.
-'''kql
+```kql
 DeviceTvmSecureConfigurationAssessment
 | where ConfigurationId in ('scid-91', 'scid-2000', 'scid-2001', 'scid-2002', 'scid-2003', 'scid-2010', 'scid-2011', 'scid-2012', 'scid-2013', 'scid-2014', 'scid-2016','scid-96')
 | extend Test = case(
