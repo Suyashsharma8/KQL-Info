@@ -27,3 +27,9 @@ DeviceTvmSecureConfigurationAssessment
 | where EnableNetworkProtection =="BAD"
 | where DeviceType !="Server"
 | where SensorEnabled =="GOOD"
+```
+To get the details of the scid configured in your environment you can use the below query:
+```kql
+DeviceTvmSecureConfigurationAssessmentKB
+| where ConfigurationId == "scid-2010"
+| project ConfigurationId, ConfigurationName
