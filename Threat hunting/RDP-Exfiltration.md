@@ -1,6 +1,6 @@
 
 
-'''KQL
+
 DeviceFileEvents
 | where isnotempty(InitiatingProcessRemoteSessionIP)
 | where FolderPath startswith @"\\tsclient"
