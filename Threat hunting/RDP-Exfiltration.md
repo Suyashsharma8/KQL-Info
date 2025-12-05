@@ -1,6 +1,6 @@
 
 
-
+```kql
 DeviceFileEvents
 | where isnotempty(InitiatingProcessRemoteSessionIP)
 | where FolderPath startswith @"\\tsclient"
@@ -21,6 +21,6 @@ DeviceFileEvents
     IsInitiatingProcessRemoteSession,
     InitiatingProcessSessionId,
     ReportId
-'''
+```
 
 
