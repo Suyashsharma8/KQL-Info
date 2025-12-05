@@ -1,4 +1,5 @@
 
+This KQL query detects possible RDP-based file transfer by identifying file access on redirected drives (`\\tsclient`) during a remote session.
 
 ```kql
 DeviceFileEvents
