@@ -13,3 +13,4 @@ let Creates = AWSCloudTrail
 Deletes
 | join kind=inner Creates on BucketName
 | where CreateTime between (DeleteTime .. datetime_add('hour', 1, DeleteTime))
+
