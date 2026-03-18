@@ -1,4 +1,4 @@
-
+This query detects delete + recreate of same s3 bucket name within 1 hour. This is a simple detection for potential hijack exposure.
 
 ```kql
 let Deletes = AWSCloudTrail
